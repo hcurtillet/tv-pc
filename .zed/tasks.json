@@ -1,56 +1,56 @@
 // Project tasks — run with `task: spawn` (cmd-shift-p) or the task picker.
 // Re-spawning "tauri: dev" reuses its terminal, so it acts as a restart.
 [
-  {
-    "label": "tauri: dev",
-    "command": "npm",
-    "args": ["run", "tauri", "dev"],
-    "cwd": "$ZED_WORKTREE_ROOT",
-    "allow_concurrent_runs": false,
-    "reveal": "always"
-  },
-  {
-    "label": "tauri: build",
-    "command": "npm",
-    "args": ["run", "tauri", "build"],
-    "cwd": "$ZED_WORKTREE_ROOT",
-    "allow_concurrent_runs": false,
-    "reveal": "always"
-  },
-  {
-    "label": "frontend: dev (vite only, in browser)",
-    "command": "npm",
-    "args": ["run", "dev"],
-    "cwd": "$ZED_WORKTREE_ROOT",
-    "allow_concurrent_runs": false,
-    "reveal": "always"
-  },
-  {
-    "label": "frontend: typecheck + build",
-    "command": "npm",
-    "args": ["run", "build"],
-    "cwd": "$ZED_WORKTREE_ROOT",
-    "reveal": "always"
-  },
-  {
-    "label": "rust: check",
-    "command": "cargo",
-    "args": ["check"],
-    "cwd": "$ZED_WORKTREE_ROOT/src-tauri",
-    "reveal": "always"
-  },
-  {
-    "label": "rust: clippy",
-    "command": "cargo",
-    "args": ["clippy", "--all-targets"],
-    "cwd": "$ZED_WORKTREE_ROOT/src-tauri",
-    "reveal": "always"
-  },
-  {
-    "label": "rust: test",
-    "command": "cargo",
-    "args": ["test"],
-    "cwd": "$ZED_WORKTREE_ROOT/src-tauri",
-    "reveal": "always"
-  }
+    {
+        "label": "tauri: dev",
+        "command": "npm",
+        "args": ["run", "tauri", "dev"],
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "allow_concurrent_runs": false,
+        "reveal": "always"
+    },
+    {
+        "label": "tauri: build",
+        "command": "npm",
+        "args": ["run", "tauri", "build"],
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "allow_concurrent_runs": false,
+        "reveal": "always"
+    },
+    {
+        "label": "frontend: dev (vite only, in browser)",
+        "command": "npm",
+        "args": ["run", "dev"],
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "allow_concurrent_runs": false,
+        "reveal": "always"
+    },
+    {
+        "label": "frontend: typecheck + build",
+        "command": "npm",
+        "args": ["run", "build"],
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "reveal": "always"
+    },
+    {
+        "label": "rust: check",
+        "command": "cargo",
+        "args": ["check"],
+        "cwd": "$ZED_WORKTREE_ROOT/src-tauri",
+        "reveal": "always"
+    },
+    {
+        "label": "rust: clippy",
+        "command": "cargo",
+        "args": ["clippy", "--all-targets"],
+        "cwd": "$ZED_WORKTREE_ROOT/src-tauri",
+        "reveal": "always"
+    },
+    {
+        "label": "rust: test",
+        "command": "cargo",
+        "args": ["test"],
+        "cwd": "$ZED_WORKTREE_ROOT/src-tauri",
+        "reveal": "always"
+    }
 ]

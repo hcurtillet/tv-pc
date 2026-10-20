@@ -1,14 +1,14 @@
 // Project settings — layered on top of ~/.config/zed/settings.json.
 {
-  "lsp": {
-    "rust-analyzer": {
-      "initialization_options": {
-        // The Cargo workspace lives in src-tauri/, not at the repo root.
-        "linkedProjects": ["src-tauri/Cargo.toml"],
-        "check": {
-          "command": "clippy"
+    "lsp": {
+        "rust-analyzer": {
+            "initialization_options": {
+                // The Cargo workspace lives in src-tauri/, not at the repo root.
+                "linkedProjects": ["src-tauri/Cargo.toml"],
+                "check": {
+                    "command": "clippy"
+                }
+            }
         }
-      }
     }
-  }
 }

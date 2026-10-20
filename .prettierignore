@@ -1,0 +1,6 @@
+**/*.yml
+dist/
+public/
+package-lock.json
+# Rust side is formatted by rustfmt; Tauri CLI rewrites its JSON files itself.
+src-tauri/
